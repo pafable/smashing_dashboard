@@ -1,7 +1,7 @@
 require 'dashing'
 
 configure do
-  set :auth_token, 'I0T ¯\_(ツ)_/¯ lyf3'
+  set :auth_token, 'YOUR_AUTH_TOKEN'
   set :default_dashboard, 'iot'
 
   # See http://www.sinatrarb.com/intro.html > Available Template Languages on
