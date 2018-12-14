@@ -1,14 +1,14 @@
-class Dashing.Meter extends Dashing.Widget
+class Dashing.Mem extends Dashing.Widget
 
   @accessor 'value', Dashing.AnimatedValue
 
   constructor: ->
     super
     @observe 'value', (value) ->
-      $(@node).find(".meter").val(value).trigger('change')
+      $(@node).find(".mem").val(value).trigger('change')
 
   ready: ->
-    meter = $(@node).find(".meter")
-    meter.attr("data-bgcolor", meter.css("background-color"))
-    meter.attr("data-fgcolor", meter.css("color"))
-    meter.knob()
+    mem = $(@node).find(".mem")
+    mem.attr("data-bgcolor", mem.css("background-color"))
+    mem.attr("data-fgcolor", mem.css("color"))
+    mem.knob()
