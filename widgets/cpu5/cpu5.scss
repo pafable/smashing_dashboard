@@ -1,0 +1,35 @@
+// ----------------------------------------------------------------------------
+// Sass declarations   #9c4274 - original color  #5BB73B
+// ----------------------------------------------------------------------------
+$background-color:  #5BB73B;
+
+$title-color:       rgba(255, 255, 255, 0.7);
+$moreinfo-color:    rgba(255, 255, 255, 0.3);
+
+$cpu5-background:  darken($background-color, 15%);
+
+// ----------------------------------------------------------------------------
+// Widget-cpu5 styles
+// ----------------------------------------------------------------------------
+.widget-cpu5 {
+
+  background-color: $background-color;
+
+  input.cpu5 {
+    background-color: $cpu5-background;
+    color:  #fff;
+  }
+
+  .title {
+    color: $title-color;
+  }
+
+  .more-info {
+    color: $moreinfo-color;
+  }
+
+  .updated-at {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+}
